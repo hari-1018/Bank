@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+
+    .bank_balance {
+      width: 600px;
+      height: 600px;
+      margin: auto;
+    }
+    input {
+      width: 585px;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      background-color: aquamarine;
+    }
+    #show_balance {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .Depositing{
+        background-color: gold;
+        border-radius: 10px;
+    }
+    .Withdrawing{
+        background-color: orange;
+        border-radius: 10px;
+    }
+    h4{
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="bank_balance">
+    <h2>Your Transaction Details</h2>
+            <div class="Depositing">
+                <h4>Deposit Amount</h4>
+                <input id="deposit_amount" type="number" required placeholder="Please Enter Your Deposit Amount">
+                <button onclick="your_deposit()">Confirm My Deposit</button>
+            </div>
+            <br><br>
+
+            <div class="Withdrawing">
+                <h4>Withdraw Amount</h4>
+                <input id="withdraw_amount"" type="number" required placeholder="Please Enter Your Withdrawl amount">
+                <button onclick="your_withdraw()">Withdraw</button>
+            </div>
+            <br><br>
+
+            <button onclick="your_balance()">Show Balance</button>
+            <div id="show_balance"></div>
+
+
+    </div>
+
+  <script src="bank.js"></script>
+</body>
+</html>
